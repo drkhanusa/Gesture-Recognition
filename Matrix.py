@@ -2,11 +2,11 @@ import csv
 import numpy as np
 from PIL import Image as im
 def read_csv():
-    with open('D:/Afor_Giatoc/data/20211216_JAN_G_H/10/12.csv') as f:
+    with open('D:/Afor_Giatoc/data/20211216_JAN_G_H/10/12.csv') as f:     # upload  data from csv file.
         reader = csv.reader(f)
         l = [row for row in reader]
     a = int(len(l))-1
-    Acc_x = np.zeros((a, a), dtype=float)
+    Acc_x = np.zeros((a, a), dtype=float)  # create recurrence matrix which is symmetric with respect to the zero main diagonal.
     Acc_y = np.zeros((a, a), dtype=float)
     Acc_z = np.zeros((a, a), dtype=float)
     for i in range(a):
@@ -27,13 +27,13 @@ def read_csv():
     # data_x.show()
     # data_y.show()
     # data_z.show()
-    img = np.zeros([a, a, 3])
-    img[:, :, 0] = Acc_x
+    img = np.zeros([a, a, 3]) # image is created from three gray scale images.
+    img[:, :, 0] = Acc_x  
     img[:, :, 1] = Acc_y
     img[:, :, 2] = Acc_z
 
     image = im.fromarray(img.astype(np.uint8))
-    image.save('12.png')
+    image.save('12.png') # color image.
     # image.show(
 
 read_csv()
