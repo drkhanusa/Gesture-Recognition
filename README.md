@@ -18,8 +18,10 @@ For example at a single measurement of 1 person with 12 gestures.
 ![image-dataset](https://user-images.githubusercontent.com/102515240/160379410-d38215a7-8497-4f9f-ac7a-c40278f8a35a.png)
 
 
+
 Finally, divide the above dataset into 2 parts and put it into Resnet-18.
-This is my result. Not-pretrained.
+
+This is my result: 76%. Not-pretrained.
 
 ![result](https://user-images.githubusercontent.com/102515240/160379805-a4033d75-b200-4e40-a51e-c7edf4261117.jpg)
 
