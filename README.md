@@ -11,7 +11,7 @@ Graph.py get data from csv file and generate graph.
 ![histogram](https://user-images.githubusercontent.com/102515240/160377947-ce3382f6-e176-4f43-9efa-f1f66cb4a428.png)
 
 
-Matrix get data from csv file and generate image, dataset has 4,379 Files.
+Matrix.py get data from csv file and generate image, dataset has 4,379 Files.
 For example at a single measurement of 1 person with 12 gestures.
 
 ![image-dataset](https://user-images.githubusercontent.com/102515240/160379410-d38215a7-8497-4f9f-ac7a-c40278f8a35a.png)
